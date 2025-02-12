@@ -1,7 +1,10 @@
 
+import { useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="relative min-h-[600px] flex items-center justify-center bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4 py-32 animate-fade-up">
@@ -18,6 +21,7 @@ export const Hero = () => {
           <Button
             size="lg"
             className="rounded-full px-8 animate-slide-up-fade"
+            onClick={() => navigate("/order")}
           >
             Order Now
           </Button>
