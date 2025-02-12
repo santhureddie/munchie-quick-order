@@ -2,15 +2,25 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { PlusCircle } from "lucide-react";
+import { useCart } from "@/contexts/CartContext";
+import { toast } from "sonner";
 
 interface FoodCardProps {
+  id: number;
   title: string;
   description: string;
   price: number;
   image: string;
 }
 
-export const FoodCard = ({ title, description, price, image }: FoodCardProps) => {
+export const FoodCard = ({ id, title, description, price, image }: FoodCardProps) => {
+  const { addItem } = useCart();
+
+  const handleAddToCart = () => {
+    addItem({ id, title, price });
+    toast.success(`Added ${title} to cart`);
+  };
+
   return (
     <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
       <div className="aspect-video overflow-hidden">
@@ -26,7 +36,7 @@ export const FoodCard = ({ title, description, price, image }: FoodCardProps) =>
       </CardHeader>
       <CardFooter className="flex justify-between items-center">
         <span className="text-lg font-semibold">${price.toFixed(2)}</span>
-        <Button size="sm" className="rounded-full">
+        <Button size="sm" className="rounded-full" onClick={handleAddToCart}>
           <PlusCircle className="h-4 w-4 mr-2" />
           Add to Cart
         </Button>
