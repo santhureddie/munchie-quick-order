@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { X } from "lucide-react";
 
 const Order = () => {
   const navigate = useNavigate();
@@ -39,7 +40,15 @@ const Order = () => {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <div className="container mx-auto px-4 py-32">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto relative">
+          <Button
+            variant="ghost"
+            size="icon"
+            className="absolute -top-2 -right-2 rounded-full"
+            onClick={() => navigate("/")}
+          >
+            <X className="h-5 w-5" />
+          </Button>
           <h1 className="text-3xl font-bold mb-8">Complete Your Order</h1>
           <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-lg shadow-sm">
             <div className="space-y-2">
