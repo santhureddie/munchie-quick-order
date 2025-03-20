@@ -6,8 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Add base path for GitHub Pages
-  // You'll need to replace 'munchie-quick-order' with your actual repository name
+  // Add base path for GitHub Pages with the exact repository name
   base: '/munchie-quick-order/',
   server: {
     host: "::",
