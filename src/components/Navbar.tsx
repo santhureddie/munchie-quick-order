@@ -7,6 +7,15 @@ import { CartModal } from "./CartModal";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false); // Close mobile menu after clicking
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div className="container mx-auto px-4">
@@ -17,10 +26,18 @@ export const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#menu" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a 
+              href="#menu" 
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+              onClick={(e) => handleNavClick(e, "menu")}
+            >
               Menu
             </a>
-            <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a 
+              href="#about" 
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+              onClick={(e) => handleNavClick(e, "about")}
+            >
               About
             </a>
             <CartModal />
@@ -45,12 +62,14 @@ export const Navbar = () => {
               <a
                 href="#menu"
                 className="block px-3 py-2 text-gray-600 hover:text-gray-900 transition-colors"
+                onClick={(e) => handleNavClick(e, "menu")}
               >
                 Menu
               </a>
               <a
                 href="#about"
                 className="block px-3 py-2 text-gray-600 hover:text-gray-900 transition-colors"
+                onClick={(e) => handleNavClick(e, "about")}
               >
                 About
               </a>
