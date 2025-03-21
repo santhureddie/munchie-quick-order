@@ -29,6 +29,34 @@ const MENU_ITEMS = [
     description: "Creamy pasta with pancetta and parmesan",
     price: 13.99,
     image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=500&h=400&fit=crop"
+  },
+  {
+    id: 5,
+    title: "Chicken Alfredo",
+    description: "Grilled chicken with creamy alfredo sauce on fettuccine",
+    price: 15.99,
+    image: "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=500&h=400&fit=crop"
+  },
+  {
+    id: 6,
+    title: "Veggie Wrap",
+    description: "Fresh vegetables and hummus in a whole wheat wrap",
+    price: 10.99,
+    image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500&h=400&fit=crop"
+  },
+  {
+    id: 7,
+    title: "Fish & Chips",
+    description: "Beer-battered cod with crispy fries and tartar sauce",
+    price: 16.99,
+    image: "https://images.unsplash.com/photo-1579208030886-b937da0925dc?w=500&h=400&fit=crop"
+  },
+  {
+    id: 8,
+    title: "Chocolate Brownie",
+    description: "Rich chocolate brownie with vanilla ice cream",
+    price: 7.99,
+    image: "https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=500&h=400&fit=crop"
   }
 ];
 
