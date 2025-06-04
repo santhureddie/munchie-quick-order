@@ -1,69 +1,75 @@
-# Welcome to your Lovable project
-
-## Project info
-
-**URL**: https://lovable.dev/projects/aa2cbfab-d532-4b04-bad7-4c991bc482c0
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/aa2cbfab-d532-4b04-bad7-4c991bc482c0) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# 🍔 Munchie Quick Order
+Munchie Quick Order is a modern web application designed to streamline the food ordering process. Built with cutting-edge technologies, it offers a seamless and responsive user experience for both customers and restaurant owners.
+## 🚀 Live Demo
+Access the live application [here](https://santhureddie.github.io/munchie-quick-order/)
+## 🛠️ Technologies Used
+- React: Front-end library for building user interfaces.
+- TypeScript: Superset of JavaScript that adds static typing.
+- Vite: Next-generation frontend tooling for fast development.
+- Tailwind CSS: Utility-first CSS framework for rapid UI development.
+- shadcn/ui: Component library for building accessible and customizable UI components.
+- Supabase: Backend-as-a-Service providing authentication and database services.
+## 📁 Project Structure
+```
+munchie-quick-order/
+├── .github/
+│   └── workflows/         # GitHub Actions workflows
+├── public/                # Static assets
+├── src/                   # Source code
+├── supabase/              # Supabase configuration and migrations
+├── .gitignore             # Git ignore rules
+├── README.md              # Project documentation
+├── bun.lockb              # Bun package manager lock file
+├── components.json        # Component configuration
+├── eslint.config.js       # ESLint configuration
+├── index.html             # Entry HTML file
+├── package-lock.json      # NPM lock file
+├── package.json           # Project metadata and dependencies
+├── postcss.config.js      # PostCSS configuration
+├── tailwind.config.ts     # Tailwind CSS configuration
+├── tsconfig.app.json      # TypeScript app configuration
+├── tsconfig.json          # Base TypeScript configuration
+├── tsconfig.node.json     # TypeScript Node.js configuration
+└── vite.config.ts         # Vite configuration
 ```
 
-**Edit a file directly in GitHub**
+## ⚙️ Getting Started
+To set up and run the project locally, follow these steps:
+### Prerequisites
+- Node.js: Ensure you have Node.js installed. You can download it from [here](https://nodejs.org/)
+- Bun: This project uses Bun as the package manager. Install it from [here](https://bun.sh/)
+### Installation
+Clone the repository:
+```
+git clone https://github.com/santhureddie/munchie-quick-order.git
+cd munchie-quick-order
+```
+Install dependencies:
+```
+bun install
+```
+Set up environment variables:
+Create a .env file in the root directory and add the necessary environment variables. Refer to the Supabase documentation for required variables.
+Start the development server:
+```
+bun run dev
+```
+The application will be available at http://localhost:5173/ by default.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🧩 Features
+- **User Authentication:** Secure login and registration using Supabase.
+- **Responsive Design:** Optimized for various devices and screen sizes.
+- **Real-time Updates:** Live order tracking and status updates.
+- **Admin Dashboard:** Manage menu items, orders, and user accounts.
+- **Customizable UI:** Easily modify components using shadcn/ui and Tailwind CSS.
 
-**Use GitHub Codespaces**
+## 📦 Deployment
+This portfolio is deployed using GitHub Pages. Deployment is automated via GitHub Actions, and any changes pushed to the main branch are automatically deployed to the live site.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📄 License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
 
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/aa2cbfab-d532-4b04-bad7-4c991bc482c0) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 👨‍💻 Author
+ Santhosh Kumar Reddy Jampana
+ 
+ [GitHub Profile](https://github.com/santhureddie)
