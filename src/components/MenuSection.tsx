@@ -57,6 +57,27 @@ const MENU_ITEMS = [
     description: "Rich chocolate brownie with vanilla ice cream",
     price: 7.99,
     image: "https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=500&h=400&fit=crop"
+  },
+  {
+    id: 9,
+    title: "Cheese Pizza",
+    description: "Stone-baked pizza loaded with melted mozzarella cheese",
+    price: 13.49,
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&h=400&fit=crop"
+  },
+  {
+    id: 10,
+    title: "Veggie Burger",
+    description: "Plant-based patty with lettuce, tomato, and house sauce",
+    price: 11.49,
+    image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=500&h=400&fit=crop"
+  },
+  {
+    id: 11,
+    title: "Ice Cream Sundae",
+    description: "Vanilla ice cream with chocolate syrup, nuts, and a cherry",
+    price: 6.99,
+    image: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=500&h=400&fit=crop"
   }
 ];
 
